@@ -1,0 +1,388 @@
+I0425 21:04:47.826494 34438 run-with-timeout.cc:134] Running on host 34ed055d5580
+I0425 21:04:47.826542 34438 run-with-timeout.cc:141] PATH environment variable: /work/yugabyte-db/build/venv/bin:/work/yugabyte-db/build/venv/bin:/work/yugabyte-db/build/venv/bin:/work/miniconda/bin:/work/miniconda/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+I0425 21:04:47.826555 34438 run-with-timeout.cc:149] Starting child process with a timeout of 1201 seconds
+I0425 21:04:47.827085 34438 run-with-timeout.cc:158] Child process pid: 34439
+Note: Google Test filter = CreateInitialSysCatalogSnapshotTest.CreateInitialSysCatalogSnapshot
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from CreateInitialSysCatalogSnapshotTest
+[ RUN      ] CreateInitialSysCatalogSnapshotTest.CreateInitialSysCatalogSnapshot
+I0425 21:04:47.996773 34439 test_util.cc:116] Environment variable ASAN_OPTIONS:   
+I0425 21:04:47.996858 34439 test_util.cc:116] Environment variable LSAN_OPTIONS:   
+I0425 21:04:47.996861 34439 test_util.cc:116] Environment variable UBSAN_OPTIONS:   
+I0425 21:04:47.996865 34439 test_util.cc:116] Environment variable TSAN_OPTIONS:   
+I0425 21:04:47.996906 34439 create_initial_sys_catalog_snapshot.cc:44] Creating initial system catalog snapshot at: /work/yugabyte-db/build/release-gcc-dynamic-ninja/share/initial_sys_catalog_snapshot
+I0425 21:04:47.996935 34439 external_mini_cluster.cc:183] Env var YB_EXTRA_MASTER_FLAGS not specified, not setting extra flags from it
+I0425 21:04:47.996953 34439 external_mini_cluster.cc:183] Env var YB_EXTRA_TSERVER_FLAGS not specified, not setting extra flags from it
+I0425 21:04:47.997164 34439 mem_tracker.cc:282] MemTracker: hard memory limit is 8.000000 GB
+I0425 21:04:47.997190 34439 mem_tracker.cc:284] MemTracker: soft memory limit is 6.800000 GB
+I0425 21:04:47.998502 34439 thread_pool.cc:171] Starting thread pool { name: minicluster-messenger queue_limit: 10000 max_workers: 1024 }
+I0425 21:04:47.998973 34439 external_mini_cluster.cc:338] Starting cluster with option bind_to_unique_loopback_addresses=true
+I0425 21:04:47.998984 34439 external_mini_cluster.cc:341] Starting 1 masters
+I0425 21:04:47.999128 34439 net_util.cc:555] Selected random free RPC port 16876
+I0425 21:04:47.999155 34439 external_mini_cluster.cc:1035] Using an auto-assigned port 16876 to start an external mini-cluster master
+I0425 21:04:47.999264 34439 net_util.cc:555] Selected random free RPC port 25875
+I0425 21:04:47.999379 34439 external_mini_cluster.cc:183] Env var YB_EXTRA_DAEMON_FLAGS not specified, not setting extra flags from it
+I0425 21:04:47.999397 34439 external_mini_cluster.cc:1865] Running [m-1]: /work/yugabyte-db/build/release-gcc-dynamic-ninja/tests-pgwrapper/../bin/yb-master
+yb-master
+--fs_data_dirs=/tmp/yb_test.tmp.13477.30481.4721.pid34379/create_initial_sys_catalog_snapshot.CreateInitialSysCatalogSnapshotTest.CreateInitialSysCatalogSnapshot.1619384687978762-34439/minicluster-data/master-0
+--rpc_bind_addresses=127.0.0.1:16876
+--webserver_interface=localhost
+--webserver_port=25875
+--load_balancer_initial_delay_secs=0
+--master_addresses=127.0.0.1:16876
+--callhome_enabled=false
+--metrics_log_interval_ms=0
+--log_dir=
+--enable_tracing
+--memory_limit_hard_bytes=1073741824
+--logtostderr
+--rpc_slow_query_threshold_ms=10000
+--hide_pg_catalog_table_creation_logs
+--client_read_write_timeout_ms=120000
+--memory_limit_hard_bytes=2147483648
+--create_initial_sys_catalog_snapshot
+--initial_sys_catalog_snapshot_path=/work/yugabyte-db/build/release-gcc-dynamic-ninja/share/initial_sys_catalog_snapshot
+--master_auto_run_initdb
+--enable_leader_failure_detection=true
+--enable_ysql=true
+--master_auto_run_initdb
+--server_dump_info_path=/tmp/yb_test.tmp.13477.30481.4721.pid34379/create_initial_sys_catalog_snapshot.CreateInitialSysCatalogSnapshotTest.CreateInitialSysCatalogSnapshot.1619384687978762-34439/minicluster-data/master-0/yb-data/master/info.pb
+--server_dump_info_format=pb
+--rpc_server_allow_ephemeral_ports
+--logbuflevel=-1
+--metric_node_name=test_invocation_2021-04-25T21_04_47_16494_7329_34379
+--fatal_details_path_prefix=/work/yugabyte-db/build/release-gcc-dynamic-ninja/yb-test-logs/tests-pgwrapper__create_initial_sys_catalog_snapshot/CreateInitialSysCatalogSnapshotTest_CreateInitialSysCatalogSnapshot.fatal_failure_details.m-1
+--minicluster_daemon_id=m-1
+[m-1] I0425 21:04:48.132016 34446 master_main.cc:104] NumCPUs determined to be: 80
+[m-1] I0425 21:04:48.132158 34446 mem_tracker.cc:282] MemTracker: hard memory limit is 2.000000 GB
+[m-1] I0425 21:04:48.132184 34446 mem_tracker.cc:284] MemTracker: soft memory limit is 1.700000 GB
+[m-1] I0425 21:04:48.132190 34446 mem_tracker.cc:251] Setting tcmalloc max thread cache bytes to: 268435456
+[m-1] I0425 21:04:48.132293 34446 server_base_options.cc:137] Updating master addrs to {127.0.0.1:16876}
+[m-1] I0425 21:04:48.132356 34446 server_base_options.cc:137] Updating master addrs to {127.0.0.1:16876}
+[m-1] I0425 21:04:48.132458 34446 server_base_options.cc:137] Updating master addrs to {127.0.0.1:16876}
+[m-1] I0425 21:04:48.134399 34446 server_base_options.cc:137] Updating master addrs to {127.0.0.1:16876}
+[m-1] I0425 21:04:48.134692 34446 rpc_server.cc:86] yb::server::RpcServer created at 0x55dbefc6c0b0
+[m-1] I0425 21:04:48.134708 34446 master.cc:149] yb::master::Master created at 0x7ffc8a200030
+[m-1] I0425 21:04:48.134725 34446 master.cc:150] yb::master::TSManager created at 0x55dbefc7e930
+[m-1] I0425 21:04:48.134728 34446 master.cc:151] yb::master::CatalogManager created at 0x55dbefe70000
+[m-1] I0425 21:04:48.134742 34446 master_main.cc:127] Initializing master server...
+[m-1] I0425 21:04:48.136699 34446 server_base.cc:468] Could not load existing FS layout: Not found (yb/util/env_posix.cc:1514): /tmp/yb_test.tmp.13477.30481.4721.pid34379/create_initial_sys_catalog_snapshot.CreateInitialSysCatalogSnapshotTest.CreateInitialSysCatalogSnapshot.1619384687978762-34439/minicluster-data/master-0/yb-data/master/instance: No such file or directory (system error 2)
+[m-1] I0425 21:04:48.136734 34446 server_base.cc:469] Creating new FS layout
+[m-1] I0425 21:04:48.152436 34446 fs_manager.cc:463] Generated new instance metadata in path /tmp/yb_test.tmp.13477.30481.4721.pid34379/create_initial_sys_catalog_snapshot.CreateInitialSysCatalogSnapshotTest.CreateInitialSysCatalogSnapshot.1619384687978762-34439/minicluster-data/master-0/yb-data/master/instance:
+[m-1] uuid: "7720df89aa484af8913285ee70b7366b"
+[m-1] format_stamp: "Formatted at 2021-04-25 21:04:48 on 34ed055d5580"
+[m-1] I0425 21:04:48.157065 34446 fs_manager.cc:251] Opened local filesystem: /tmp/yb_test.tmp.13477.30481.4721.pid34379/create_initial_sys_catalog_snapshot.CreateInitialSysCatalogSnapshotTest.CreateInitialSysCatalogSnapshot.1619384687978762-34439/minicluster-data/master-0
+[m-1] uuid: "7720df89aa484af8913285ee70b7366b"
+[m-1] format_stamp: "Formatted at 2021-04-25 21:04:48 on 34ed055d5580"
+[m-1] I0425 21:04:48.157652 34446 server_base.cc:251] Auto setting FLAGS_num_reactor_threads to 16
+[m-1] I0425 21:04:48.159016 34446 thread_pool.cc:171] Starting thread pool { name: Master queue_limit: 10000 max_workers: 1024 }
+[m-1] I0425 21:04:48.163563 34446 master_main.cc:130] Starting Master server...
+[m-1] I0425 21:04:48.163606 34446 ulimit_util.cc:214] Configured soft limit for cpu time is already larger than specified min value (unlimited vs. unlimited). Skipping.
+[m-1] I0425 21:04:48.163619 34446 ulimit_util.cc:214] Configured soft limit for file size is already larger than specified min value (unlimited vs. unlimited). Skipping.
+[m-1] I0425 21:04:48.163625 34446 ulimit_util.cc:214] Configured soft limit for data seg size is already larger than specified min value (unlimited vs. unlimited). Skipping.
+[m-1] I0425 21:04:48.163630 34446 ulimit_util.cc:214] Configured soft limit for stack size is already larger than specified min value (8388608 vs. 8388608). Skipping.
+[m-1] I0425 21:04:48.163640 34446 ulimit_util.cc:214] Configured soft limit for max user processes is already larger than specified min value (unlimited vs. 12000). Skipping.
+[m-1] I0425 21:04:48.163646 34446 ulimit_util.cc:214] Configured soft limit for open files is already larger than specified min value (1048576 vs. 1048576). Skipping.
+[m-1] I0425 21:04:48.163653 34446 ulimit_util.cc:214] Configured soft limit for max locked memory is already larger than specified min value (67108864 vs. 65536). Skipping.
+[m-1] I0425 21:04:48.163661 34446 ulimit_util.cc:214] Configured soft limit for max memory size is already larger than specified min value (unlimited vs. unlimited). Skipping.
+[m-1] I0425 21:04:48.163666 34446 master_main.cc:132] ulimit cur(max)...
+[m-1] ulimit: core file size unlimited(unlimited) blks
+[m-1] ulimit: data seg size unlimited(unlimited) kb
+[m-1] ulimit: open files 1048576(1048576)
+[m-1] ulimit: file size unlimited(unlimited) blks
+[m-1] ulimit: pending signals 1030167(1030167)
+[m-1] ulimit: file locks unlimited(unlimited)
+[m-1] ulimit: max locked memory 65536(65536) kb
+[m-1] ulimit: max memory size unlimited(unlimited) kb
+[m-1] ulimit: stack size 8192(unlimited) kb
+[m-1] ulimit: cpu time unlimited(unlimited) secs
+[m-1] ulimit: max user processes unlimited(unlimited)
+[m-1] I0425 21:04:48.163710 34473 async_initializer.cc:82] Starting to init ybclient
+[m-1] W0425 21:04:48.163969 34473 master.cc:194] Failed to get current config: Service unavailable (yb/master/catalog_manager.cc:1564): CatalogManager is not running
+[m-1] I0425 21:04:48.164021 34473 client-internal.cc:2252] New master addresses: [127.0.0.1:16876]
+[m-1] I0425 21:04:48.164441 34446 service_pool.cc:148] yb.master.MasterBackupService: yb::rpc::ServicePoolImpl created at 0x55dbefc70900
+[m-1] I0425 21:04:48.165443 34473 async_initializer.cc:86] Successfully built ybclient
+[m-1] I0425 21:04:48.166353 34446 service_pool.cc:148] yb.master.MasterService: yb::rpc::ServicePoolImpl created at 0x55dbefc70b40
+[m-1] I0425 21:04:48.166834 34446 service_pool.cc:148] yb.tserver.TabletServerService: yb::rpc::ServicePoolImpl created at 0x55dbefc70d80
+[m-1] I0425 21:04:48.167120 34446 thread_pool.cc:171] Starting thread pool { name: Master-high-pri queue_limit: 10000 max_workers: 1024 }
+[m-1] I0425 21:04:48.167138 34446 service_pool.cc:148] yb.consensus.ConsensusService: yb::rpc::ServicePoolImpl created at 0x55dbefc71200
+[m-1] I0425 21:04:48.167572 34446 service_pool.cc:148] yb.tserver.RemoteBootstrapService: yb::rpc::ServicePoolImpl created at 0x55dbefc71440
+[m-1] I0425 21:04:48.167711 34446 webserver.cc:158] Starting webserver on localhost:25875
+[m-1] I0425 21:04:48.167721 34446 webserver.cc:163] Document root: /work/yugabyte-db/www
+[m-1] I0425 21:04:48.168030 34446 webserver.cc:153] Webserver listen spec is 127.0.0.1:25875
+[m-1] I0425 21:04:48.168324 34446 webserver.cc:252] Webserver started. Bound to: http://127.0.0.1:25875/
+[m-1] I0425 21:04:48.168555 34446 service_pool.cc:148] yb.server.GenericService: yb::rpc::ServicePoolImpl created at 0x55dbefc71680
+[m-1] I0425 21:04:48.168783 34446 rpc_server.cc:169] RPC server started. Bound to: 127.0.0.1:16876
+[m-1] I0425 21:04:48.169029 34446 server_base.cc:330] Dumped server information to /tmp/yb_test.tmp.13477.30481.4721.pid34379/create_initial_sys_catalog_snapshot.CreateInitialSysCatalogSnapshotTest.CreateInitialSysCatalogSnapshot.1619384687978762-34439/minicluster-data/master-0/yb-data/master/info.pb
+[m-1] I0425 21:04:48.169090 34446 server_base.cc:517] Using private rpc address 127.0.0.1
+[m-1] I0425 21:04:48.169104 34446 server_base.cc:539] Using http address localhost
+[m-1] I0425 21:04:48.169396 34478 sys_catalog.cc:222] Trying to load previous SysCatalogTable data from disk
+[m-1] I0425 21:04:48.169641 34478 catalog_manager.cc:1419] Did not find previous SysCatalogTable data on disk. Not found (yb/util/env_posix.cc:1514): Could not load Raft group metadata from /tmp/yb_test.tmp.13477.30481.4721.pid34379/create_initial_sys_catalog_snapshot.CreateInitialSysCatalogSnapshotTest.CreateInitialSysCatalogSnapshot.1619384687978762-34439/minicluster-data/master-0/yb-data/master/tablet-meta/00000000000000000000000000000000: /tmp/yb_test.tmp.13477.30481.4721.pid34379/create_initial_sys_catalog_snapshot.CreateInitialSysCatalogSnapshotTest.CreateInitialSysCatalogSnapshot.1619384687978762-34439/minicluster-data/master-0/yb-data/master/tablet-meta/00000000000000000000000000000000: No such file or directory (system error 2)
+[m-1] I0425 21:04:48.169729 34478 sys_catalog.cc:287] Creating new SysCatalogTable data
+I0425 21:04:48.174238 34439 external_mini_cluster.cc:1914] Started [m-1] /work/yugabyte-db/build/release-gcc-dynamic-ninja/tests-pgwrapper/../bin/yb-master as pid 34446
+[m-1] I0425 21:04:48.177784 34478 sys_catalog.cc:332] Determining permanent_uuid for [127.0.0.1:16876]
+[m-1] I0425 21:04:48.213779 34479 server_base.cc:517] Using private rpc address 127.0.0.1
+[m-1] I0425 21:04:48.215001 34478 sys_catalog.cc:347] Setting up raft configuration: opid_index: -1 peers { permanent_uuid: "7720df89aa484af8913285ee70b7366b" member_type: VOTER last_known_private_addr { host: "127.0.0.1" port: 16876 } cloud_info { placement_cloud: "cloud1" placement_region: "datacenter1" placement_zone: "rack1" } }
+[m-1] I0425 21:04:48.220167 34478 consensus_meta.cc:282] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Updating active role from UNKNOWN_ROLE to FOLLOWER. Consensus state: current_term: 0 leader_uuid: "" config { opid_index: -1 peers { permanent_uuid: "7720df89aa484af8913285ee70b7366b" member_type: VOTER last_known_private_addr { host: "127.0.0.1" port: 16876 } cloud_info { placement_cloud: "cloud1" placement_region: "datacenter1" placement_zone: "rack1" } } }, has_pending_config = 0
+[m-1] I0425 21:04:48.224524 34478 server_base.cc:517] Using private rpc address 127.0.0.1
+[m-1] I0425 21:04:48.224678 34478 tablet_peer.cc:1222] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [state=BOOTSTRAPPING]: Changed state from NOT_STARTED to BOOTSTRAPPING
+[m-1] I0425 21:04:48.225293 34478 consensus_meta.cc:282] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Updating active role from UNKNOWN_ROLE to FOLLOWER. Consensus state: current_term: 0 leader_uuid: "" config { opid_index: -1 peers { permanent_uuid: "7720df89aa484af8913285ee70b7366b" member_type: VOTER last_known_private_addr { host: "127.0.0.1" port: 16876 } cloud_info { placement_cloud: "cloud1" placement_region: "datacenter1" placement_zone: "rack1" } } }, has_pending_config = 0
+[m-1] I0425 21:04:48.225364 34478 tablet_bootstrap_if.cc:79] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Bootstrap starting.
+[m-1] I0425 21:04:48.225531 34478 tablet.cc:453] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Schema version for sys.catalog is 0
+[m-1] I0425 21:04:48.226003 34478 docdb_rocksdb_util.cc:277] Auto setting FLAGS_rocksdb_max_background_flushes to 4
+[m-1] I0425 21:04:48.226047 34478 docdb_rocksdb_util.cc:300] Auto setting FLAGS_rocksdb_max_background_compactions to 4
+[m-1] I0425 21:04:48.226053 34478 docdb_rocksdb_util.cc:311] Auto setting FLAGS_rocksdb_base_background_compactions to 4
+[m-1] I0425 21:04:48.226059 34478 docdb_rocksdb_util.cc:334] Auto setting FLAGS_priority_thread_pool_size to 35
+[m-1] I0425 21:04:48.226310 34478 tablet.cc:581] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Creating RocksDB database in dir /tmp/yb_test.tmp.13477.30481.4721.pid34379/create_initial_sys_catalog_snapshot.CreateInitialSysCatalogSnapshotTest.CreateInitialSysCatalogSnapshot.1619384687978762-34439/minicluster-data/master-0/yb-data/master/data/rocksdb/table-sys.catalog.uuid/tablet-00000000000000000000000000000000
+[m-1] I0425 21:04:48.234565 34478 tablet.cc:739] Opening RocksDB at: /tmp/yb_test.tmp.13477.30481.4721.pid34379/create_initial_sys_catalog_snapshot.CreateInitialSysCatalogSnapshotTest.CreateInitialSysCatalogSnapshot.1619384687978762-34439/minicluster-data/master-0/yb-data/master/data/rocksdb/table-sys.catalog.uuid/tablet-00000000000000000000000000000000
+[m-1] I0425 21:04:48.237036 34478 db_impl.cc:767] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]: Creating manifest 1 
+[m-1] I0425 21:04:48.239732 34478 version_set.cc:2839] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]: Recovered from manifest file:/tmp/yb_test.tmp.13477.30481.4721.pid34379/create_initial_sys_catalog_snapshot.CreateInitialSysCatalogSnapshotTest.CreateInitialSysCatalogSnapshot.1619384687978762-34439/minicluster-data/master-0/yb-data/master/data/rocksdb/table-sys.catalog.uuid/tablet-00000000000000000000000000000000/MANIFEST-000001 succeeded,manifest_file_number is 1, next_file_number is 3, last_sequence is 1125899906842624, log_number is 0,prev_log_number is 0,max_column_family is 0, flushed_values is <NULL>
+[m-1] I0425 21:04:48.239753 34478 version_set.cc:2847] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]: Column family [default] (ID 0), log number is 0
+[m-1] I0425 21:04:48.242764 34478 tablet.cc:797] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Successfully opened a RocksDB database at /tmp/yb_test.tmp.13477.30481.4721.pid34379/create_initial_sys_catalog_snapshot.CreateInitialSysCatalogSnapshotTest.CreateInitialSysCatalogSnapshot.1619384687978762-34439/minicluster-data/master-0/yb-data/master/data/rocksdb/table-sys.catalog.uuid/tablet-00000000000000000000000000000000, obj: 0x55dbefd18a00
+[m-1] I0425 21:04:48.242800 34478 tablet_bootstrap.cc:608] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Time spent opening tablet: real 0.017s	user 0.006s	sys 0.000s
+[m-1] I0425 21:04:48.243001 34478 tablet_bootstrap.cc:533] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: No blocks or log segments found. Creating new log.
+[m-1] I0425 21:04:48.243119 34478 log.cc:1060] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Setting log wal retention time to 0 seconds
+[m-1] I0425 21:04:48.243429 34478 log.cc:579] durable_wal_write is turned on.
+[m-1] I0425 21:04:48.247514 34478 tablet_bootstrap_if.cc:79] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: No bootstrap required, opened a new log
+[m-1] I0425 21:04:48.247586 34478 log.cc:1060] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Setting log wal retention time to 0 seconds
+[m-1] I0425 21:04:48.249647 34478 consensus_meta.cc:282] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Updating active role from UNKNOWN_ROLE to FOLLOWER. Consensus state: current_term: 0 leader_uuid: "" config { opid_index: -1 peers { permanent_uuid: "7720df89aa484af8913285ee70b7366b" member_type: VOTER last_known_private_addr { host: "127.0.0.1" port: 16876 } cloud_info { placement_cloud: "cloud1" placement_region: "datacenter1" placement_zone: "rack1" } } }, has_pending_config = 0
+[m-1] I0425 21:04:48.251175 34478 tablet_peer.cc:928] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [state=BOOTSTRAPPING]: Setting cdc min replicated index to 9223372036854775807
+[m-1] I0425 21:04:48.256294 34478 consensus_meta.cc:282] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Updating active role from FOLLOWER to FOLLOWER. Consensus state: current_term: 0 leader_uuid: "" config { opid_index: -1 peers { permanent_uuid: "7720df89aa484af8913285ee70b7366b" member_type: VOTER last_known_private_addr { host: "127.0.0.1" port: 16876 } cloud_info { placement_cloud: "cloud1" placement_region: "datacenter1" placement_zone: "rack1" } } }, has_pending_config = 0
+[m-1] I0425 21:04:48.256384 34478 raft_consensus.cc:428] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 0 FOLLOWER]: Replica starting. Triggering 0 pending operations. Active config: opid_index: -1 peers { permanent_uuid: "7720df89aa484af8913285ee70b7366b" member_type: VOTER last_known_private_addr { host: "127.0.0.1" port: 16876 } cloud_info { placement_cloud: "cloud1" placement_region: "datacenter1" placement_zone: "rack1" } }
+[m-1] I0425 21:04:48.256522 34478 raft_consensus.cc:458] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 0 FOLLOWER]: Consensus starting up: Expiring fail detector timer to make a prompt election more likely
+[m-1] I0425 21:04:48.256539 34478 raft_consensus.cc:1048] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 0 FOLLOWER]: Becoming Follower/Learner. State: Replica: 7720df89aa484af8913285ee70b7366b, State: 1, Role: FOLLOWER, Watermarks: {Received: 0.0 Committed: 0.0} Leader: 0.0, new leader: , initial_fd_wait: <uninitialized>
+[m-1] I0425 21:04:48.256671 34478 consensus_meta.cc:282] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Updating active role from FOLLOWER to FOLLOWER. Consensus state: current_term: 0 leader_uuid: "" config { opid_index: -1 peers { permanent_uuid: "7720df89aa484af8913285ee70b7366b" member_type: VOTER last_known_private_addr { host: "127.0.0.1" port: 16876 } cloud_info { placement_cloud: "cloud1" placement_region: "datacenter1" placement_zone: "rack1" } } }, has_pending_config = 0
+[m-1] I0425 21:04:48.256732 34478 consensus_queue.cc:274] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [NON_LEADER]: Queue going to NON_LEADER mode. State: All replicated op: 0.0, Majority replicated op: 0.0, Committed index: 0.0, Last applied: 0.0, Last appended: 0.0, Current term: 0, Majority size: -1, State: QUEUE_OPEN, Mode: NON_LEADER
+[m-1] I0425 21:04:48.256786 34478 raft_consensus.cc:3079] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 0 FOLLOWER]: Calling mark dirty synchronously for reason code CONSENSUS_STARTED
+[m-1] I0425 21:04:48.256809 34478 sys_catalog.cc:373] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [sys.catalog]: SysCatalogTable state changed. Locked=0. Reason: RaftConsensus started. Latest consensus state: current_term: 0 leader_uuid: "" config { opid_index: -1 peers { permanent_uuid: "7720df89aa484af8913285ee70b7366b" member_type: VOTER last_known_private_addr { host: "127.0.0.1" port: 16876 } cloud_info { placement_cloud: "cloud1" placement_region: "datacenter1" placement_zone: "rack1" } } }
+[m-1] I0425 21:04:48.256844 34478 sys_catalog.cc:377] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [sys.catalog]: This master's current role is: FOLLOWER
+[m-1] I0425 21:04:48.256866 34478 tablet_peer.cc:1222] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [state=RUNNING]: Changed state from BOOTSTRAPPING to RUNNING
+[m-1] I0425 21:04:48.256882 34478 sys_catalog.cc:373] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [sys.catalog]: SysCatalogTable state changed. Locked=0. Reason: Started TabletPeer. Latest consensus state: current_term: 0 leader_uuid: "" config { opid_index: -1 peers { permanent_uuid: "7720df89aa484af8913285ee70b7366b" member_type: VOTER last_known_private_addr { host: "127.0.0.1" port: 16876 } cloud_info { placement_cloud: "cloud1" placement_region: "datacenter1" placement_zone: "rack1" } } }
+[m-1] I0425 21:04:48.256901 34478 sys_catalog.cc:377] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [sys.catalog]: This master's current role is: FOLLOWER
+[m-1] I0425 21:04:48.257660 34478 db_impl.cc:2466] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]: SetOptions() on column family [default], inputs:
+[m-1] I0425 21:04:48.257678 34478 db_impl.cc:2469] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]: level0_stop_writes_trigger: 2147483647
+[m-1] I0425 21:04:48.257683 34478 db_impl.cc:2469] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]: level0_slowdown_writes_trigger: 2147483647
+[m-1] I0425 21:04:48.257688 34478 db_impl.cc:2474] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]: [default] SetOptions succeeded
+[m-1] I0425 21:04:48.257697 34478 mutable_cf_options.cc:83] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                         write_buffer_size: 134217728
+[m-1] I0425 21:04:48.257704 34478 mutable_cf_options.cc:85] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                   max_write_buffer_number: 2
+[m-1] I0425 21:04:48.257709 34478 mutable_cf_options.cc:87] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                          arena_block_size: 131072
+[m-1] I0425 21:04:48.257712 34478 mutable_cf_options.cc:89] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                memtable_prefix_bloom_bits: 0
+[m-1] I0425 21:04:48.257717 34478 mutable_cf_options.cc:91] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:              memtable_prefix_bloom_probes: 6
+[m-1] I0425 21:04:48.257722 34478 mutable_cf_options.cc:93] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:  memtable_prefix_bloom_huge_page_tlb_size: 0
+[m-1] I0425 21:04:48.257727 34478 mutable_cf_options.cc:95] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                     max_successive_merges: 0
+[m-1] I0425 21:04:48.257731 34478 mutable_cf_options.cc:97] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                            filter_deletes: 0
+[m-1] I0425 21:04:48.257736 34478 mutable_cf_options.cc:99] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                  disable_auto_compactions: 1
+[m-1] I0425 21:04:48.257740 34478 mutable_cf_options.cc:101] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:       soft_pending_compaction_bytes_limit: 0
+[m-1] I0425 21:04:48.257745 34478 mutable_cf_options.cc:103] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:       hard_pending_compaction_bytes_limit: 0
+[m-1] I0425 21:04:48.257750 34478 mutable_cf_options.cc:105] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:        level0_file_num_compaction_trigger: 5
+[m-1] I0425 21:04:48.257755 34478 mutable_cf_options.cc:107] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:            level0_slowdown_writes_trigger: 2147483647
+[m-1] I0425 21:04:48.257759 34478 mutable_cf_options.cc:109] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                level0_stop_writes_trigger: 2147483647
+[m-1] I0425 21:04:48.257763 34478 mutable_cf_options.cc:111] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:            max_grandparent_overlap_factor: 10
+[m-1] I0425 21:04:48.257768 34478 mutable_cf_options.cc:113] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                expanded_compaction_factor: 25
+[m-1] I0425 21:04:48.257772 34478 mutable_cf_options.cc:115] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                  source_compaction_factor: 1
+[m-1] I0425 21:04:48.257776 34478 mutable_cf_options.cc:117] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                     target_file_size_base: 2097152
+[m-1] I0425 21:04:48.257781 34478 mutable_cf_options.cc:119] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:               target_file_size_multiplier: 1
+[m-1] I0425 21:04:48.257786 34478 mutable_cf_options.cc:121] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                  max_bytes_for_level_base: 10485760
+[m-1] I0425 21:04:48.257791 34478 mutable_cf_options.cc:123] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:            max_bytes_for_level_multiplier: 10
+[m-1] I0425 21:04:48.257797 34478 mutable_cf_options.cc:131] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]: max_bytes_for_level_multiplier_additional: 1, 1, 1, 1, 1, 1, 1
+[m-1] I0425 21:04:48.257802 34478 mutable_cf_options.cc:133] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:            verify_checksums_in_compaction: 1
+[m-1] I0425 21:04:48.257807 34478 mutable_cf_options.cc:135] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:         max_sequential_skip_in_iterations: 8
+[m-1] I0425 21:04:48.258481 34478 db_impl.cc:2466] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]: SetOptions() on column family [default], inputs:
+[m-1] I0425 21:04:48.258497 34478 db_impl.cc:2469] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]: disable_auto_compactions: false
+[m-1] I0425 21:04:48.258502 34478 db_impl.cc:2474] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]: [default] SetOptions succeeded
+[m-1] I0425 21:04:48.258508 34478 mutable_cf_options.cc:83] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                         write_buffer_size: 134217728
+[m-1] I0425 21:04:48.258513 34478 mutable_cf_options.cc:85] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                   max_write_buffer_number: 2
+[m-1] I0425 21:04:48.258518 34478 mutable_cf_options.cc:87] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                          arena_block_size: 131072
+[m-1] I0425 21:04:48.258523 34478 mutable_cf_options.cc:89] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                memtable_prefix_bloom_bits: 0
+[m-1] I0425 21:04:48.258527 34478 mutable_cf_options.cc:91] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:              memtable_prefix_bloom_probes: 6
+[m-1] I0425 21:04:48.258533 34478 mutable_cf_options.cc:93] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:  memtable_prefix_bloom_huge_page_tlb_size: 0
+[m-1] I0425 21:04:48.258538 34478 mutable_cf_options.cc:95] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                     max_successive_merges: 0
+[m-1] I0425 21:04:48.258545 34478 mutable_cf_options.cc:97] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                            filter_deletes: 0
+[m-1] I0425 21:04:48.258553 34478 mutable_cf_options.cc:99] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                  disable_auto_compactions: 0
+[m-1] I0425 21:04:48.258559 34478 mutable_cf_options.cc:101] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:       soft_pending_compaction_bytes_limit: 0
+[m-1] I0425 21:04:48.258566 34478 mutable_cf_options.cc:103] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:       hard_pending_compaction_bytes_limit: 0
+[m-1] I0425 21:04:48.258574 34478 mutable_cf_options.cc:105] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:        level0_file_num_compaction_trigger: 5
+[m-1] I0425 21:04:48.258581 34478 mutable_cf_options.cc:107] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:            level0_slowdown_writes_trigger: 2147483647
+[m-1] I0425 21:04:48.258589 34478 mutable_cf_options.cc:109] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                level0_stop_writes_trigger: 2147483647
+[m-1] I0425 21:04:48.258597 34478 mutable_cf_options.cc:111] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:            max_grandparent_overlap_factor: 10
+[m-1] I0425 21:04:48.258605 34478 mutable_cf_options.cc:113] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                expanded_compaction_factor: 25
+[m-1] I0425 21:04:48.258612 34478 mutable_cf_options.cc:115] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                  source_compaction_factor: 1
+[m-1] I0425 21:04:48.258620 34478 mutable_cf_options.cc:117] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                     target_file_size_base: 2097152
+[m-1] I0425 21:04:48.258625 34478 mutable_cf_options.cc:119] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:               target_file_size_multiplier: 1
+[m-1] I0425 21:04:48.258630 34478 mutable_cf_options.cc:121] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:                  max_bytes_for_level_base: 10485760
+[m-1] I0425 21:04:48.258633 34478 mutable_cf_options.cc:123] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:            max_bytes_for_level_multiplier: 10
+[m-1] I0425 21:04:48.258641 34478 mutable_cf_options.cc:131] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]: max_bytes_for_level_multiplier_additional: 1, 1, 1, 1, 1, 1, 1
+[m-1] I0425 21:04:48.258646 34478 mutable_cf_options.cc:133] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:            verify_checksums_in_compaction: 1
+[m-1] I0425 21:04:48.258651 34478 mutable_cf_options.cc:135] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [R]:         max_sequential_skip_in_iterations: 8
+[m-1] I0425 21:04:48.258723 34478 tablet_peer.cc:1115] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [state=RUNNING]: Registered log gc
+[m-1] I0425 21:04:48.258774 34478 sys_catalog.cc:592] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [sys.catalog]: configured and running, proceeding with master startup.
+[m-1] I0425 21:04:48.258816 34478 server_base.cc:517] Using private rpc address 127.0.0.1
+[m-1] W0425 21:04:48.259249 34491 catalog_manager_bg_tasks.cc:112] Catalog manager background task thread going to sleep: Service unavailable (yb/master/scoped_leader_shared_lock.cc:83): Catalog manager is not initialized. State: 1
+[m-1] W0425 21:04:48.259722 34493 catalog_manager.cc:1816] Table info not found for pg_tablespace catalog table
+[m-1] I0425 21:04:48.259800 34446 master_main.cc:135] Master server successfully started.
+[m-1] I0425 21:04:48.261305 34446 total_mem_watcher.cc:73] Root memtracker limit: 2147483648 (2048 MiB); this server will stop if memory usage exceeds 200% of that: 4294967296 bytes (4096 MiB).
+[m-1] I0425 21:04:51.593142 34495 raft_consensus.cc:972] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 0 FOLLOWER]: ReportFailDetected: Starting NORMAL_ELECTION...
+[m-1] I0425 21:04:51.593214 34495 raft_consensus.cc:576] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 0 FOLLOWER]: Triggering leader pre-election, mode=NORMAL_ELECTION
+[m-1] I0425 21:04:51.593261 34495 raft_consensus.cc:3143] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 0 FOLLOWER]: Snoozing failure detection for 3.159s
+[m-1] I0425 21:04:51.593312 34495 raft_consensus.cc:615] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 0 FOLLOWER]: Starting pre-election with config: opid_index: -1 peers { permanent_uuid: "7720df89aa484af8913285ee70b7366b" member_type: VOTER last_known_private_addr { host: "127.0.0.1" port: 16876 } cloud_info { placement_cloud: "cloud1" placement_region: "datacenter1" placement_zone: "rack1" } }
+[m-1] I0425 21:04:51.593472 34495 leader_election.cc:241] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [CANDIDATE]: Term 1 pre-election: Election decided. Result: candidate won.
+[m-1] I0425 21:04:51.593724 34496 raft_consensus.cc:3143] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 0 FOLLOWER]: Snoozing failure detection for 3.188s
+[m-1] I0425 21:04:51.593842 34496 raft_consensus.cc:3016] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 0 FOLLOWER]: Leader pre-election won for term 1
+[m-1] I0425 21:04:51.593895 34496 raft_consensus.cc:576] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 0 FOLLOWER]: Triggering leader election, mode=NORMAL_ELECTION
+[m-1] I0425 21:04:51.593907 34496 raft_consensus.cc:3143] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 0 FOLLOWER]: Snoozing failure detection for 3.031s
+[m-1] I0425 21:04:51.593926 34496 raft_consensus.cc:3204] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 0 FOLLOWER]: Advancing to term 1
+[m-1] I0425 21:04:51.600155 34496 consensus_meta.cc:282] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Updating active role from FOLLOWER to FOLLOWER. Consensus state: current_term: 1 leader_uuid: "" config { opid_index: -1 peers { permanent_uuid: "7720df89aa484af8913285ee70b7366b" member_type: VOTER last_known_private_addr { host: "127.0.0.1" port: 16876 } cloud_info { placement_cloud: "cloud1" placement_region: "datacenter1" placement_zone: "rack1" } } }, has_pending_config = 0
+[m-1] I0425 21:04:51.600268 34496 raft_consensus.cc:615] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 1 FOLLOWER]: Starting election with config: opid_index: -1 peers { permanent_uuid: "7720df89aa484af8913285ee70b7366b" member_type: VOTER last_known_private_addr { host: "127.0.0.1" port: 16876 } cloud_info { placement_cloud: "cloud1" placement_region: "datacenter1" placement_zone: "rack1" } }
+[m-1] I0425 21:04:51.604228 34496 leader_election.cc:241] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [CANDIDATE]: Term 1 election: Election decided. Result: candidate won.
+[m-1] I0425 21:04:51.604292 34496 raft_consensus.cc:3143] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 1 FOLLOWER]: Snoozing failure detection for 3.070s
+[m-1] I0425 21:04:51.604322 34496 raft_consensus.cc:3030] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 1 FOLLOWER]: Leader election won for term 1
+[m-1] I0425 21:04:51.604336 34496 replica_state.cc:1170] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 1 FOLLOWER]: Reset our lease: 4235861.957s
+[m-1] I0425 21:04:51.604353 34496 replica_state.cc:1415] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 1 FOLLOWER]: SetLeaderNoOpCommittedUnlocked(0), committed: { term: 0 index: 0 }, received: { term: 0 index: 0 }
+[m-1] I0425 21:04:51.604390 34496 consensus_meta.cc:282] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Updating active role from FOLLOWER to LEADER. Consensus state: current_term: 1 leader_uuid: "7720df89aa484af8913285ee70b7366b" config { opid_index: -1 peers { permanent_uuid: "7720df89aa484af8913285ee70b7366b" member_type: VOTER last_known_private_addr { host: "127.0.0.1" port: 16876 } cloud_info { placement_cloud: "cloud1" placement_region: "datacenter1" placement_zone: "rack1" } } }, has_pending_config = 0
+[m-1] I0425 21:04:51.604454 34496 raft_consensus.cc:3079] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 1 LEADER]: Calling mark dirty synchronously for reason code NEW_LEADER_ELECTED
+[m-1] I0425 21:04:51.604475 34496 sys_catalog.cc:373] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [sys.catalog]: SysCatalogTable state changed. Locked=1. Reason: New leader 7720df89aa484af8913285ee70b7366b elected. Latest consensus state: current_term: 1 leader_uuid: "7720df89aa484af8913285ee70b7366b" config { opid_index: -1 peers { permanent_uuid: "7720df89aa484af8913285ee70b7366b" member_type: VOTER last_known_private_addr { host: "127.0.0.1" port: 16876 } cloud_info { placement_cloud: "cloud1" placement_region: "datacenter1" placement_zone: "rack1" } } }
+[m-1] I0425 21:04:51.604509 34496 sys_catalog.cc:377] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [sys.catalog]: This master's current role is: LEADER
+[m-1] I0425 21:04:51.604748 34496 raft_consensus.cc:1000] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 1 LEADER]: Becoming Leader. State: Replica: 7720df89aa484af8913285ee70b7366b, State: 1, Role: LEADER, Watermarks: {Received: 0.0 Committed: 0.0} Leader: 0.0
+[m-1] I0425 21:04:51.604825 34496 consensus_queue.cc:256] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [LEADER]: Queue going to LEADER mode. State: All replicated op: 0.0, Majority replicated op: 0.0, Committed index: 0.0, Last applied: 0.0, Last appended: 0.0, Current term: 1, Majority size: 1, State: QUEUE_OPEN, Mode: LEADER, active raft config: opid_index: -1 peers { permanent_uuid: "7720df89aa484af8913285ee70b7366b" member_type: VOTER last_known_private_addr { host: "127.0.0.1" port: 16876 } cloud_info { placement_cloud: "cloud1" placement_region: "datacenter1" placement_zone: "rack1" } }
+[m-1] I0425 21:04:51.604910 34496 raft_consensus.cc:1018] Sending NO_OP at op { term: 0 index: 0 }
+[m-1] I0425 21:04:51.605247 34497 catalog_manager.cc:758] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Loading table and tablet metadata into memory for term 1
+[m-1] I0425 21:04:51.605350 34497 catalog_manager.cc:799] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: VisitSysCatalog: Wait on leader_lock_ for any existing operations to finish.
+[m-1] I0425 21:04:51.605371 34497 catalog_manager.cc:810] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: VisitSysCatalog: Acquire catalog manager lock_ before loading sys catalog.
+[m-1] I0425 21:04:51.605424 34497 catalog_manager.cc:931] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Load: Loading tables into memory.
+[m-1] I0425 21:04:51.606240 34497 catalog_manager.cc:931] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Load: Loading tablets into memory.
+[m-1] I0425 21:04:51.606350 34497 catalog_manager.cc:931] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Load: Loading namespaces into memory.
+[m-1] I0425 21:04:51.606426 34497 catalog_manager.cc:931] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Load: Loading user-defined types into memory.
+[m-1] I0425 21:04:51.606487 34497 catalog_manager.cc:931] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Load: Loading cluster configuration into memory.
+[m-1] I0425 21:04:51.606544 34497 catalog_manager.cc:931] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Load: Loading roles into memory.
+[m-1] I0425 21:04:51.606624 34497 catalog_manager.cc:931] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Load: Loading Redis config into memory.
+[m-1] I0425 21:04:51.606684 34497 catalog_manager.cc:931] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Load: Loading sys config into memory.
+[m-1] I0425 21:04:51.606743 34497 catalog_manager_ent.cc:273] RunLoaders: Loading snapshots into memory.
+[m-1] I0425 21:04:51.606798 34497 catalog_manager_ent.cc:279] RunLoaders: Loading CDC streams into memory.
+[m-1] I0425 21:04:51.606853 34497 catalog_manager_ent.cc:285] RunLoaders: Loading universe replication info into memory.
+[m-1] I0425 21:04:51.607543 34495 replica_state.cc:1415] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 1 LEADER]: SetLeaderNoOpCommittedUnlocked(1), committed: { term: 0 index: 0 }, received: { term: 1 index: 1 }
+[m-1] I0425 21:04:51.607623 34495 replica_state.cc:795] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b [term 1 LEADER]: Advanced the committed_op_id across terms. Last committed operation was: { term: 0 index: 0 } New committed index is: { term: 1 index: 1 }
+[m-1] I0425 21:04:51.617897 34497 catalog_manager.cc:1375] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Created default keyspace: system [id=00000000000000000000000000000001]
+[m-1] I0425 21:04:51.619623 34497 catalog_manager.cc:1375] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Created default keyspace: system_schema [id=00000000000000000000000000000002]
+[m-1] I0425 21:04:51.622375 34497 catalog_manager.cc:1375] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Created default keyspace: system_auth [id=00000000000000000000000000000003]
+[m-1] I0425 21:04:51.628245 34497 partition.cc:511] Creating partitions with num_tablets: 1
+[m-1] I0425 21:04:51.628397 34497 catalog_manager.cc:1295] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Inserted new system.peers table info into CatalogManager maps
+[m-1] I0425 21:04:51.630730 34497 catalog_manager.cc:1300] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote table to system catalog: 0x000055dbf051d680 ->  [id=e8216992f5034e9ba0c7c1b2556c3c88], tablets: [0x000055dbf0714000 -> c869788095db431e88ff663fab3551d7 (table  [id=e8216992f5034e9ba0c7c1b2556c3c88])]
+[m-1] I0425 21:04:51.633574 34497 catalog_manager.cc:1317] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote tablets to system catalog: [0x000055dbf0714000 -> c869788095db431e88ff663fab3551d7 (table  [id=e8216992f5034e9ba0c7c1b2556c3c88])]
+[m-1] I0425 21:04:51.633843 34497 partition.cc:511] Creating partitions with num_tablets: 1
+[m-1] I0425 21:04:51.633929 34497 catalog_manager.cc:1295] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Inserted new system.local table info into CatalogManager maps
+[m-1] I0425 21:04:51.635519 34497 catalog_manager.cc:1300] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote table to system catalog: 0x000055dbf0714280 ->  [id=c2dc07f140b9461ca634d422a0f1cabc], tablets: [0x000055dbf0714500 -> d7261b9c061f4c53b2a0b8514eb27f8f (table  [id=c2dc07f140b9461ca634d422a0f1cabc])]
+[m-1] I0425 21:04:51.640708 34497 catalog_manager.cc:1317] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote tablets to system catalog: [0x000055dbf0714500 -> d7261b9c061f4c53b2a0b8514eb27f8f (table  [id=c2dc07f140b9461ca634d422a0f1cabc])]
+[m-1] I0425 21:04:51.640900 34497 partition.cc:511] Creating partitions with num_tablets: 1
+[m-1] I0425 21:04:51.640969 34497 catalog_manager.cc:1295] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Inserted new system_schema.keyspaces table info into CatalogManager maps
+[m-1] I0425 21:04:51.643271 34497 catalog_manager.cc:1300] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote table to system catalog: 0x000055dbf0714780 ->  [id=7962433e5a124815bda8ab025e68709c], tablets: [0x000055dbf0714a00 -> 954b8f5dc0ca4016b8ae73d471b3f820 (table  [id=7962433e5a124815bda8ab025e68709c])]
+[m-1] I0425 21:04:51.645745 34497 catalog_manager.cc:1317] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote tablets to system catalog: [0x000055dbf0714a00 -> 954b8f5dc0ca4016b8ae73d471b3f820 (table  [id=7962433e5a124815bda8ab025e68709c])]
+[m-1] I0425 21:04:51.645993 34497 partition.cc:511] Creating partitions with num_tablets: 1
+[m-1] I0425 21:04:51.646082 34497 catalog_manager.cc:1295] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Inserted new system_schema.tables table info into CatalogManager maps
+[m-1] I0425 21:04:51.647640 34497 catalog_manager.cc:1300] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote table to system catalog: 0x000055dbf0714c80 ->  [id=6fd8e2fd945747dbb69b2855bb8e7c07], tablets: [0x000055dbf0714f00 -> 1dfd7813f1fb46e9a1989c37834962e6 (table  [id=6fd8e2fd945747dbb69b2855bb8e7c07])]
+[m-1] I0425 21:04:51.650080 34497 catalog_manager.cc:1317] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote tablets to system catalog: [0x000055dbf0714f00 -> 1dfd7813f1fb46e9a1989c37834962e6 (table  [id=6fd8e2fd945747dbb69b2855bb8e7c07])]
+[m-1] I0425 21:04:51.650255 34497 partition.cc:511] Creating partitions with num_tablets: 1
+[m-1] I0425 21:04:51.650316 34497 catalog_manager.cc:1295] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Inserted new system_schema.columns table info into CatalogManager maps
+[m-1] I0425 21:04:51.651942 34497 catalog_manager.cc:1300] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote table to system catalog: 0x000055dbf0715180 ->  [id=997e42a5ad5e4ed88292463b7a7a8b82], tablets: [0x000055dbf0715400 -> c331b9af03f948a6bb5dea571c0866b3 (table  [id=997e42a5ad5e4ed88292463b7a7a8b82])]
+[m-1] I0425 21:04:51.654414 34497 catalog_manager.cc:1317] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote tablets to system catalog: [0x000055dbf0715400 -> c331b9af03f948a6bb5dea571c0866b3 (table  [id=997e42a5ad5e4ed88292463b7a7a8b82])]
+[m-1] I0425 21:04:51.654558 34497 partition.cc:511] Creating partitions with num_tablets: 1
+[m-1] I0425 21:04:51.654640 34497 catalog_manager.cc:1295] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Inserted new system.size_estimates table info into CatalogManager maps
+[m-1] I0425 21:04:51.657018 34497 catalog_manager.cc:1300] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote table to system catalog: 0x000055dbf0715680 ->  [id=e1cd5c9592734c0fa811cd7738c60e3c], tablets: [0x000055dbf0715900 -> a74a521ae82246f19d9eb7c8008f2430 (table  [id=e1cd5c9592734c0fa811cd7738c60e3c])]
+[m-1] I0425 21:04:51.658860 34497 catalog_manager.cc:1317] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote tablets to system catalog: [0x000055dbf0715900 -> a74a521ae82246f19d9eb7c8008f2430 (table  [id=e1cd5c9592734c0fa811cd7738c60e3c])]
+[m-1] I0425 21:04:51.659041 34497 partition.cc:511] Creating partitions with num_tablets: 1
+[m-1] I0425 21:04:51.659123 34497 catalog_manager.cc:1295] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Inserted new system_schema.aggregates table info into CatalogManager maps
+[m-1] I0425 21:04:51.661365 34497 catalog_manager.cc:1300] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote table to system catalog: 0x000055dbf0715b80 ->  [id=f3ca4cae76644c07bbeaf45d2b698800], tablets: [0x000055dbf0784000 -> 2982a02c07264bf08e3c333be95cce27 (table  [id=f3ca4cae76644c07bbeaf45d2b698800])]
+[m-1] I0425 21:04:51.663352 34497 catalog_manager.cc:1317] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote tablets to system catalog: [0x000055dbf0784000 -> 2982a02c07264bf08e3c333be95cce27 (table  [id=f3ca4cae76644c07bbeaf45d2b698800])]
+[m-1] I0425 21:04:51.663524 34497 partition.cc:511] Creating partitions with num_tablets: 1
+[m-1] I0425 21:04:51.663589 34497 catalog_manager.cc:1295] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Inserted new system_schema.functions table info into CatalogManager maps
+[m-1] I0425 21:04:51.665787 34497 catalog_manager.cc:1300] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote table to system catalog: 0x000055dbf0784280 ->  [id=fb2594ced4514def9bd6ec282d99411f], tablets: [0x000055dbf0784500 -> 440ffd0cbb2942618d5d1791ef8d30a1 (table  [id=fb2594ced4514def9bd6ec282d99411f])]
+[m-1] I0425 21:04:51.667585 34497 catalog_manager.cc:1317] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote tablets to system catalog: [0x000055dbf0784500 -> 440ffd0cbb2942618d5d1791ef8d30a1 (table  [id=fb2594ced4514def9bd6ec282d99411f])]
+[m-1] I0425 21:04:51.667749 34497 partition.cc:511] Creating partitions with num_tablets: 1
+[m-1] I0425 21:04:51.667814 34497 catalog_manager.cc:1295] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Inserted new system_schema.indexes table info into CatalogManager maps
+[m-1] I0425 21:04:51.670141 34497 catalog_manager.cc:1300] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote table to system catalog: 0x000055dbf0784780 ->  [id=299e5a94bf82417ab69c7cb100ee12c6], tablets: [0x000055dbf0784a00 -> 2e5da703d51c41ab9856f018f73c3698 (table  [id=299e5a94bf82417ab69c7cb100ee12c6])]
+[m-1] I0425 21:04:51.671957 34497 catalog_manager.cc:1317] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote tablets to system catalog: [0x000055dbf0784a00 -> 2e5da703d51c41ab9856f018f73c3698 (table  [id=299e5a94bf82417ab69c7cb100ee12c6])]
+[m-1] I0425 21:04:51.672123 34497 partition.cc:511] Creating partitions with num_tablets: 1
+[m-1] I0425 21:04:51.672186 34497 catalog_manager.cc:1295] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Inserted new system_schema.triggers table info into CatalogManager maps
+[m-1] I0425 21:04:51.674423 34497 catalog_manager.cc:1300] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote table to system catalog: 0x000055dbf0784c80 ->  [id=496c7ec078ff4bafa7f9c0fe9f68418b], tablets: [0x000055dbf0784f00 -> e069faaaea4e40b09a6fef23a5d7b518 (table  [id=496c7ec078ff4bafa7f9c0fe9f68418b])]
+[m-1] I0425 21:04:51.676283 34497 catalog_manager.cc:1317] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote tablets to system catalog: [0x000055dbf0784f00 -> e069faaaea4e40b09a6fef23a5d7b518 (table  [id=496c7ec078ff4bafa7f9c0fe9f68418b])]
+[m-1] I0425 21:04:51.676538 34497 partition.cc:511] Creating partitions with num_tablets: 1
+[m-1] I0425 21:04:51.676621 34497 catalog_manager.cc:1295] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Inserted new system_schema.views table info into CatalogManager maps
+[m-1] I0425 21:04:51.680668 34497 catalog_manager.cc:1300] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote table to system catalog: 0x000055dbf0785400 ->  [id=b18fd889b5674a1596d60bc2eb3698a4], tablets: [0x000055dbf0785680 -> ff48167991bf47d8a4fbe9cf6a5a4f4d (table  [id=b18fd889b5674a1596d60bc2eb3698a4])]
+[m-1] I0425 21:04:51.683267 34497 catalog_manager.cc:1317] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote tablets to system catalog: [0x000055dbf0785680 -> ff48167991bf47d8a4fbe9cf6a5a4f4d (table  [id=b18fd889b5674a1596d60bc2eb3698a4])]
+[m-1] I0425 21:04:51.683414 34497 partition.cc:511] Creating partitions with num_tablets: 1
+[m-1] I0425 21:04:51.683480 34497 catalog_manager.cc:1295] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Inserted new system_schema.types table info into CatalogManager maps
+[m-1] I0425 21:04:51.685807 34497 catalog_manager.cc:1300] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote table to system catalog: 0x000055dbf0785900 ->  [id=c1c6b30648d744f1bc8980ebe964d493], tablets: [0x000055dbf0785b80 -> 51d6a90ff117432f88d8793ee36b3066 (table  [id=c1c6b30648d744f1bc8980ebe964d493])]
+[m-1] I0425 21:04:51.687743 34497 catalog_manager.cc:1317] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote tablets to system catalog: [0x000055dbf0785b80 -> 51d6a90ff117432f88d8793ee36b3066 (table  [id=c1c6b30648d744f1bc8980ebe964d493])]
+[m-1] I0425 21:04:51.687911 34497 partition.cc:511] Creating partitions with num_tablets: 1
+[m-1] I0425 21:04:51.687976 34497 catalog_manager.cc:1295] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Inserted new system.partitions table info into CatalogManager maps
+[m-1] I0425 21:04:51.690249 34497 catalog_manager.cc:1300] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote table to system catalog: 0x000055dbf07b2000 ->  [id=81bf25ab37914719968fe4d4171da000], tablets: [0x000055dbf07b2280 -> 99bbad4eada547d4829ac2ef8df6169c (table  [id=81bf25ab37914719968fe4d4171da000])]
+[m-1] I0425 21:04:51.691948 34497 catalog_manager.cc:1317] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote tablets to system catalog: [0x000055dbf07b2280 -> 99bbad4eada547d4829ac2ef8df6169c (table  [id=81bf25ab37914719968fe4d4171da000])]
+[m-1] I0425 21:04:51.692087 34497 partition.cc:511] Creating partitions with num_tablets: 1
+[m-1] I0425 21:04:51.692147 34497 catalog_manager.cc:1295] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Inserted new system_auth.roles table info into CatalogManager maps
+[m-1] I0425 21:04:51.694469 34497 catalog_manager.cc:1300] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote table to system catalog: 0x000055dbf07b2500 ->  [id=63d0c6928dcb47f28c5cebf03fad9a89], tablets: [0x000055dbf07b2780 -> 0ddb5b85a931464299d2a4ad84afc4b7 (table  [id=63d0c6928dcb47f28c5cebf03fad9a89])]
+[m-1] I0425 21:04:51.697078 34497 catalog_manager.cc:1317] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote tablets to system catalog: [0x000055dbf07b2780 -> 0ddb5b85a931464299d2a4ad84afc4b7 (table  [id=63d0c6928dcb47f28c5cebf03fad9a89])]
+[m-1] I0425 21:04:51.697242 34497 partition.cc:511] Creating partitions with num_tablets: 1
+[m-1] I0425 21:04:51.697306 34497 catalog_manager.cc:1295] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Inserted new system_auth.role_permissions table info into CatalogManager maps
+[m-1] I0425 21:04:51.698892 34497 catalog_manager.cc:1300] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote table to system catalog: 0x000055dbf07b2a00 ->  [id=97fc6b1ba6904a5f8f337af7b7b6f0d4], tablets: [0x000055dbf07b2c80 -> ce6ee7fd8c874f2abc81e9bb7c93b4e8 (table  [id=97fc6b1ba6904a5f8f337af7b7b6f0d4])]
+[m-1] I0425 21:04:51.701352 34497 catalog_manager.cc:1317] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote tablets to system catalog: [0x000055dbf07b2c80 -> ce6ee7fd8c874f2abc81e9bb7c93b4e8 (table  [id=97fc6b1ba6904a5f8f337af7b7b6f0d4])]
+[m-1] I0425 21:04:51.701481 34497 partition.cc:511] Creating partitions with num_tablets: 1
+[m-1] I0425 21:04:51.701573 34497 catalog_manager.cc:1295] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Inserted new system_auth.resource_role_permissions_index table info into CatalogManager maps
+[m-1] I0425 21:04:51.704033 34497 catalog_manager.cc:1300] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote table to system catalog: 0x000055dbf07b2f00 ->  [id=c8a099b76a61418b9b9ffc56accb988c], tablets: [0x000055dbf07b3180 -> 1966aa189c014d34ae23779d73e64d6c (table  [id=c8a099b76a61418b9b9ffc56accb988c])]
+[m-1] I0425 21:04:51.706624 34497 catalog_manager.cc:1317] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Wrote tablets to system catalog: [0x000055dbf07b3180 -> 1966aa189c014d34ae23779d73e64d6c (table  [id=c8a099b76a61418b9b9ffc56accb988c])]
+[m-1] I0425 21:04:52.034355 34497 permissions_manager.cc:101] Created role: cassandra
+[m-1] I0425 21:04:52.034528 34497 catalog_manager.cc:1014] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Setting cluster UUID to f4219349-4f3f-487c-93f4-a9c9eecd0064 (randomly generated)
+[m-1] I0425 21:04:52.038188 34497 catalog_manager.cc:894] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: YSQL is enabled, will create the transaction status table when 3 tablet servers are online
+[m-1] I0425 21:04:52.038215 34497 sys_catalog_initialization.cc:236] initdb has never been run on this cluster, running it
+[m-1] I0425 21:04:52.038295 34497 catalog_manager.cc:785] T 00000000000000000000000000000000 P 7720df89aa484af8913285ee70b7366b: Completed load of sys catalog in term 1
+[m-1] I0425 21:04:52.038419 34498 pg_wrapper.cc:432] Running initdb to initialize YSQL cluster with master addresses {127.0.0.1:16876}
+[m-1] I0425 21:04:52.039187 34498 pg_wrapper.cc:396] Launching initdb: [/work/yugabyte-db/build/release-gcc-dynamic-ninja/postgres/bin/initdb, -D, /tmp/tmp_pg_data_340171474, -U, postgres]
+[m-1 stdout] The files belonging to this database system will be owned by user "root".
+[m-1 stdout] This user must also own the server process.
+[m-1 stdout] 
+[m-1] In YugabyteDB, setting LC_COLLATE to C and all other locale settings to en_US.UTF-8 by default. Locale support will be enhanced as part of addressing https://github.com/yugabyte/yugabyte-db/issues/1557
+[m-1] initdb: invalid locale name "en_US.UTF-8"
+[m-1] I0425 21:04:52.312331 34498 pg_wrapper.cc:457] initdb took 273 ms
+[m-1] E0425 21:04:52.312412 34498 pg_wrapper.cc:461] initdb failed: Runtime error (yb/yql/pgwrapper/pg_wrapper.cc:406): /work/yugabyte-db/build/release-gcc-dynamic-ninja/postgres/bin/initdb failed with exit code 256
+[m-1] E0425 21:04:52.312537 34498 catalog_manager.cc:6928] initdb failed: Runtime error (yb/yql/pgwrapper/pg_wrapper.cc:406): /work/yugabyte-db/build/release-gcc-dynamic-ninja/postgres/bin/initdb failed with exit code 256
+E0425 21:04:52.731848 34439 external_mini_cluster.cc:1124] master reported an initdb error: Runtime error (yb/yql/pgwrapper/pg_wrapper.cc:406): /work/yugabyte-db/build/release-gcc-dynamic-ninja/postgres/bin/initdb failed with exit code 256
+../../src/yb/yql/pgwrapper/pg_wrapper_test_base.cc:55: Failure
+Failed
+Bad status: Runtime error (yb/integration-tests/external_mini_cluster.cc:1125): Failed to start masters.: initdb failed: Runtime error (yb/yql/pgwrapper/pg_wrapper.cc:406): /work/yugabyte-db/build/release-gcc-dynamic-ninja/postgres/bin/initdb failed with exit code 256
+Test failure stack trace:
+    @     0x7f4280820d8e  MinimalistPrinter::OnTestPartResult()
+    @     0x7f426f6dde09  testing::internal::TestEventRepeater::OnTestPartResult()
+    @     0x7f426f6f7c4a  testing::UnitTest::AddTestPartResult()
+    @     0x7f426f6f802a  testing::internal::AssertHelper::operator=()
+    @     0x7f4280a44704  yb::pgwrapper::PgWrapperTestBase::SetUp()
+    @     0x7f426f70421d  testing::internal::HandleExceptionsInMethodIfSupported<>()
+    @     0x7f426f6f95d6  testing::Test::Run()
+    @     0x7f426f6f9724  testing::TestInfo::Run()
+    @     0x7f426f6f9867  testing::TestCase::Run()
+    @     0x7f426f6f9d48  testing::internal::UnitTestImpl::RunAllTests()
+    @     0x7f426f7046fd  testing::internal::HandleExceptionsInMethodIfSupported<>()
+    @     0x7f426f6f9ea1  testing::UnitTest::Run()
+    @     0x7f4280820847  main
+    @     0x7f426e7a6bf7  __libc_start_main
+    @     0x564ad211d1ca  _start
+    @              (nil)  (unknown)
+
+I0425 21:04:52.757112 34439 external_mini_cluster.cc:1956] { daemon_id: m-1 bound_rpc: :0 } Starting Shutdown()
+I0425 21:04:52.757179 34439 external_mini_cluster.cc:1999] Killing /work/yugabyte-db/build/release-gcc-dynamic-ninja/tests-pgwrapper/../bin/yb-master with pid 34446 with SIGKILL
+I0425 21:04:52.768765 34439 test_util.cc:93] -----------------------------------------------
+I0425 21:04:52.768790 34439 test_util.cc:94] Had fatal failures, leaving test files at /tmp/yb_test.tmp.13477.30481.4721.pid34379/create_initial_sys_catalog_snapshot.CreateInitialSysCatalogSnapshotTest.CreateInitialSysCatalogSnapshot.1619384687978762-34439
+[  FAILED  ] CreateInitialSysCatalogSnapshotTest.CreateInitialSysCatalogSnapshot (4774 ms)
+[----------] 1 test from CreateInitialSysCatalogSnapshotTest (4774 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (4774 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] CreateInitialSysCatalogSnapshotTest.CreateInitialSysCatalogSnapshot
+
+ 1 FAILED TEST
+I0425 21:04:52.783097 34438 run-with-timeout.cc:196] subprocess.Wait finished, waitpid() returned 256
+I0425 21:04:52.783164 34438 run-with-timeout.cc:203] Waiting for reaper thread to join
+I0425 21:04:52.783310 34440 run-with-timeout.cc:181] Reaper thread: finished=1, subprocess_is_running=0
+I0425 21:04:52.783552 34438 run-with-timeout.cc:207] Child process returned exit code 1
+I0425 21:04:52.783592 34438 run-with-timeout.cc:222] Returning exit code 1
+I0425 21:04:52.783601 34438 run-with-timeout.cc:224] Total time taken: 4.957 sec
